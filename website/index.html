@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+
+    
+    <title>GCOEY_Home</title>
+</head>
+<body>
+
+    <!-- //////////////Header//////////// --> 
+    <a href="http://localhost:3000/">admin</a>
+    <header class="header">
+        <img src="images/logo.jpg" alt="logo" class="header_logo">
+        <div> 
+            <div class="header_name">
+                <h2 id="hn1">Government College of Engineering, Yavatmal</h2>
+                <h3 id="hn2">(Affiliated to Dr. Babasaheb Ambedkar Technological University)</h2>
+            </div>
+        </div> 
+        <div class="header_address">
+          <i class="fa-solid fa-location-dot fa-2xl" id="hai" style="padding-left: 6rem;" onclick="openMap('Government College of Engineering Yavatmal ,Dhamangaon Road, Yavatmal- 445001')"></i>
+          <i class="fa-solid fa-phone fa-2xl" id="hai" onclick="dialPhoneNumber('07232-2432787')"></i>
+          <i class="fa-solid fa-envelope fa-2xl" id="hai" onclick="composeEmail('principal.gcoeyavatmal@dtemaharashtra.gov.in')"></i>
+          <!-- <i class="fa-solid fa-user-tie fa-2xl" id="hai"></i> -->
+      </div>
+    </header>
+
+<!-- ///////////////Navigation bar/////////////////// -->
+
+    <div class="navigation">
+        <div class="nav_item" >
+            <a href="index.html" id="nav_item">Home</a>
+            <div class="dropdown" id="nav_item>
+                <button class="dropbtn">About</button>
+                <div class="dropdown-content">
+                    <a href="about/institute.html">Institute</a>
+                    <a href="about/aicte.html">AICTE Approval-EOA</a>
+                  <a href= "about/affilation.html">DBATU Affilation</a>
+                  <a href= "about/vision.html">Vision & Mission</a>
+                  <a href= "about/infracture.html">Infracture</a>
+                  <a href= "about/idp.html">IDP 2022-27</a>
+                </div>
+            </div>
+
+            <div class="dropdown" id="nav_item>
+              <button class="dropbtn">Academics</button>
+              <div class="dropdown-content">
+                  <a href="academics/calender.html">Academic Calender</a>
+                  <a href="academics/admission.html">Admission</a>
+                  <a href="academics/examtt.html">Exam Timetable</a>
+                  <a href="academics/remedial_result.html">Remedial Exam Results</a>
+                  <a href="academics/fees_info.html">Fees Information</a>
+                  <a href="academics/syllabus.html">Syllabus</a>
+                  <a href="academics/anti_ragging.html">Anti Ragging Squad</a>
+                  <a href="academics/grc_faculty.html">GRC For Faculty</a>
+                  <a href="academics/grc_students.html">GRC For Students</a>
+              </div>
+          </div>
+
+            <div class="dropdown" id="nav_item>
+                <button class="dropbtn">Administration</button>
+                <div class="dropdown-content">
+                    <a href="administration/principle_desk.html">Principal's Desk</a>
+                    <a href="administration/organization_chart.html">Organization Chart</a>
+                    <a href="administration/office_administration.html">Office Administration</a>
+                    <a href="administration/imp_grs.html">Important GRs</a>
+                    <a href="administration/portfolio.html">Portfolio Distribution</a>
+                    <a href="administration/ombudsperson.html">Ombudsperson for Students' Grievences</a>
+                </div>
+            </div>
+            <div class="dropdown" id="nav_item>
+                <button class="dropbtn">Departments</button>
+                <div class="dropdown-content">
+                  <a href="department/computer/overview.html">Computer Enginnering</a>
+                  <a href="department/entc/overview.html">Electronics annd Telecommunicaton Engineering</a>
+                  <a href="department/mechanical/overview.html">Mechanical Enginnering</a>
+                  <a href="department/electrical/overview.html">Electrical Engineering</a>
+                  <a href="department/civil/overview.html">Civil Enginnering</a>
+                  <a href="department/workshop/overview.html">Workshop</a>
+                  <a href="department/chemistry/overview.html">Chemistry</a>
+                  <a href="department/mathematics/overview.html">Mathematics</a>
+                </div>
+            </div>
+            
+            <div class="dropdown" id="nav_item>
+              <button class="dropbtn">Facilities</button>
+              <div class="dropdown-content">
+                <a href="facilities/library.html">library</a>
+                <a href="facilities/gymkhana.html">Gymkhana</a>
+                <a href="facilities/hostel.html">Hostel</a>
+                <a href="facilities/canteen.html">Canteen</a>
+                <a href="facilities/ccoperative_store.html">Student Co-operative store</a>
+              </div>
+            </div>
+            <div class="dropdown" id="nav_item>
+                <button class="dropbtn">Student Corner</button>
+                <div class="dropdown-content">
+                  <a href="student_corner/alumini.html">Alumni</a>
+                  <a href="student_corner/events.html">Events</a>
+                  <a href="http://localhost:3000/GCOEY_Gallery">Photo Gallery</a>
+                  <a href="student_corner/scholarship.html">Scholarships & Awards</a>
+                  <a href="student_corner/stud_support_facility.html">Student Support Facility</a>
+                </div>
+              </div>
+
+              <a href="placement/overview.html" class="dropdown" id="nav_item">Placement</a>
+              
+              <div class="dropdown" id="nav_item>
+               <button class="dropbtn">Contact</button>
+               <div class="dropdown-content">
+                 <a href="Contact/contact.html" class="dropdown" id="nav_item" style="color: black;">Contact</a>
+                 <a href="file:///C:/Users/rdube/OneDrive/Desktop/admin/website/Contact/greviances.html" class="dropdown" id="nav_item" style="color: black;">Greviances</a>
+               </div>
+             </div>
+        </div>
+    </div>
+<!-- ////////////////Main Body////////////////// -->
+
+
+<div class="main_body">
+
+    <!---Flash News--->
+    <div class="FlashNews">
+      <div class="container-in">
+          <b>Notification-</b>
+          <marquee direction="left" scrollamount="10">
+              <span><img src="images/new.gif" alt="New" class="news-icon"> Report of Activities to be submitted by 15/06/2024. Appointed counseling of Director.</span>
+              <span><img src="images/new.gif" alt="New" class="news-icon"> Report of Activities to be submitted by 15/06/2024. Appointed counseling of Director.</span>
+              <span><img src="images/new.gif" alt="New" class="news-icon"> Report of Activities to be submitted by 15/06/2024. Appointed counseling of Director.</span>
+          </marquee>
+      </div>
+  </div>
+  
+
+  <!-- //////////Owl carousel//////// -->
+  <!-- //////////Owl carousel//////// -->
+
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/img1.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="images/img2.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="images/img3.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="images/img5.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="images/img6.png" class="d-block w-100" alt="...">
+        </div>
+    </div>
+</div>
+
+
+
+  <!-- /////Vision, Mission, Society///// -->
+  <!-- /////Vision, Mission, Society///// -->
+ 
+  <div class="container" style="width: 80rem;">
+    <div class="col1">
+        <h2>Vision</h2><hr>
+        <p>To become a center of excellence in engineering education, by providing the standard academics that connects education with knowledge, practice and research....<a href="about/vision.html" target="_blank">Read More</a></p>
+    </div>
+    <div class="col2">
+        <h2>Mission</h2><hr>
+        <p>To foster engineering graduates by providing a continuously improving academic environment that promotes the advancement of engineering knowledge, both in creation and dissemination and to .....<a href="about/vision.html" target="_blank">Read More</a></p>
+    </div>
+    <div class="col3">
+        <h2>About College</h2><hr>
+        <p>Government College of Engineering, Yavatmal (GCOEY) promises to  fulfill quality technical human resource needed for these sectors in India. GCOEY is affiliated to Dr. Babasaheb Ambedkar Technological University (DBATU).....<a href="about/institute.html" target="_blank">Read More</a></p>
+    </div>
+</div>
+  
+
+  <!-- /////Events & Announcements//// -->
+  <!-- /////Events & Announcements//// -->
+
+  <div class="main-sections bg-grey">
+    <div class="container-inners">
+       <div class="width-50">
+          <div class="notice-board-sect">
+             <h2><i class="fa fa-sticky-note-o" aria-hidden="true"></i> Notice Board</h2>
+             <div class="notice-board">
+                <marquee direction="up" scrollamount="4" height="400">
+                   <ul>
+                      <li><img src="images/new.gif"><a href="../pdf/scholarship.pdf" target="_blank"></a> Report of Activities to be submitted by 15/05/2024.</li>
+                      <li><img src="images/new.gif"><a href="pdf/event1.pdf" target="_blank"></a> Regarding preparation. Appointed counseling of Director of NAAC</li>
+                      <li><img src="images/new.gif"><a href="pdf/event1.pdf" target="_blank"></a> Counselor has been appointed for student counseling</li>
+                      <li><img src="images/new.gif"><a href="pdf/event1.pdf" target="_blank"></a> Meeting to be organized on college level on 15/02/2023</li>
+                      <li><img src="images/new.gif"><a href="pdf/event1.pdf" target="_blank"></a> Counselor has been appointed for doctor counseling</li>
+                      <li><img src="images/new.gif"><a href="pdf/event1.pdf" target="_blank"></a> Conducted its 2nd convocation ceremony</li>
+                      <li><img src="images/new.gif"><a href="pdf/event1.pdf" target="_blank"></a> Counselor has been appointed for director counseling</li>
+                      <li><img src="images/new.gif"><a href="pdf/event1.pdf" target="_blank"></a> 16 Feb 2022 PhD merit list Part 01_16 Feb 2022</li>
+                      <li><img src="images/new.gif"><a href="pdf/event1.pdf" target="_blank"></a> List of activities organized under TEQIP-III</li>
+                      <li><img src="images/new.gif"><a href="pdf/event1.pdf" target="_blank"></a> School of Architecture College Level counseling 2022-23</li>
+                      <li><img src="images/new.gif"><a href="pdf/event1.pdf" target="_blank"></a> Documents for empanelment of vendor for A Class contractor</li>
+                      <li><img src="images/new.gif"><a href="pdf/event1.pdf" target="_blank"></a> Counselor has been appointed for director counseling</li>
+                      <li><img src="images/new.gif"><a href="pdf/event1.pdf" target="_blank"></a> Counselor has been appointed for director counseling</li>
+                      <li><img src="images/new.gif"><a href="pdf/event1.pdf" target="_blank"></a> Counselor has been appointed for director counseling</li>
+                   </ul>
+                </marquee>
+             </div>
+          </div>
+       </div>
+       <div class="width-50">
+          <div class="notice-board-sect">
+             <h2><i class="fa fa-id-card" aria-hidden="true"></i> Upcoming Events</h2>
+             <div class="notice-board">
+                <marquee direction="up" scrollamount="4" height="400">
+                   <ul class="event-list">
+                      <li><img src="images/folder.png"><a href="pdf/event1.pdf" target="_blank"></a> Lorem Ipsum is simply dummy text of the printing and typesetting.</li>
+                      <li><img src="images/folder.png"><a href="pdf/event1.pdf" target="_blank"></a> Lorem Ipsum is simply dummy text of the printing and typesetting.</li>
+                      <li><img src="images/folder.png"><a href="pdf/event1.pdf" target="_blank"></a> Lorem Ipsum is simply dummy text of the printing and typesetting.</li>
+                      <li><img src="images/folder.png"><a href="pdf/event1.pdf" target="_blank"></a> Lorem Ipsum is simply dummy text of the printing and typesetting.</li>
+                      <li><img src="images/folder.png"><a href="pdf/event1.pdf" target="_blank"></a> Lorem Ipsum is simply dummy text of the printing and typesetting.</li>
+                      <li><img src="images/folder.png"><a href="pdf/event1.pdf" target="_blank"></a> Lorem Ipsum is simply dummy text of the printing and typesetting.</li>
+                      <li><img src="images/folder.png"><a href="pdf/event1.pdf" target="_blank"></a> Lorem Ipsum is simply dummy text of the printing and typesetting.</li>
+                      <li><img src="images/folder.png"><a href="pdf/event1.pdf" target="_blank"></a> Lorem Ipsum is simply dummy text of the printing and typesetting.</li>
+                      <li><img src="images/folder.png"><a href="pdf/event1.pdf" target="_blank"></a> Lorem Ipsum is simply dummy text of the printing and typesetting.</li>
+                      <li><img src="images/folder.png"><a href="pdf/event1.pdf" target="_blank"></a> Lorem Ipsum is simply dummy text of the printing and typesetting.</li>
+                      <li><img src="images/folder.png"><a href="pdf/event1.pdf" target="_blank"></a> Lorem Ipsum is simply dummy text of the printing and typesetting.</li>
+                      <li><img src="images/folder.png"><a href="pdf/event1.pdf" target="_blank"></a> Lorem Ipsum is simply dummy text of the printing and typesetting.</li>
+                   </ul>
+                </marquee>
+             </div>
+          </div>
+       </div>
+    </div>
+</div>
+
+ 
+ <!-----/////// Administration /////////------>
+
+<div class="main-section bg-grey">
+  <div class="container8">
+     <h2 class="heading-section"> Our College <span><strong>Administrations</strong></span></h2>
+     
+        <div  class="testimonial">
+           <div class="width-100">
+              <div class="width-20"> <img src="images/principal.png"> </div>
+              <div class="width-60">
+                 <div class="testimonial-user">
+                    <h4><strong>Prof. V. B. Waghmare</strong></h4>
+                    <p>Principal </p>
+                    <p><strong>GCOEY</strong></p>
+                 </div>
+              </div>
+             <hr>
+           </div>
+           <!-- <div class="testimonial-comment">
+              <p class="paragraph1"> Lorem Ipsum is simply dummy text of the print<br>
+                 and typesetting industry.Lorem Ipsum has been<br>
+                 the industry's standard dummy text ever since<br>
+                 the 1500s, when an unknown printer a galley.
+              </p>
+           </div> -->
+        </div> 
+        <div  class="testimonial">
+           <div class="width-100">
+              <div class="width-20"> <img src="images/princ-sect.jpg"> </div>
+              <div class="width-60">
+                 <div class="testimonial-user">
+                    <h4><strong>Shri V. C. Rastogi</strong></h4>
+                    <p>Principal Secretary</p>
+                    <p><strong>Higher & Technical Education </strong></p>
+                 </div>
+              </div>
+         
+           </div>
+           <hr>
+           <!-- <div class="testimonial-comment">
+              <p class="paragraph1"> Lorem Ipsum is simply dummy text of the print<br>
+                 and typesetting industry.Lorem Ipsum has been<br>
+                 the industry's standard dummy text ever since<br>
+                 the 1500s, when an unknown printer a galley.
+              </p>
+           </div> -->
+        </div>
+        <div  class="testimonial">
+           <div class="width-100">
+              <div class="width-20"> <img src="images/mohit.jfif"> </div>
+              <div class="width-60">
+                 <div class="testimonial-user">
+                    <h4><strong>Dr. Vinod Mohitkar</strong></h4>
+                    <p>Director</p>
+                    <p><strong>Technical Education</strong></p>
+                 </div>
+              </div>
+              <hr>
+           </div>
+           <!-- <div class="testimonial-comment">
+              <p class="paragraph1"> Lorem Ipsum is simply dummy text of the print<br>
+                 and typesetting industry.Lorem Ipsum has been<br>
+                 the industry's standard dummy text ever since<br>
+                 the 1500s, when an unknown printer a galley.
+              </p>
+           </div> -->
+        </div>
+  </div>
+</div>
+
+ <!-- ////////Countdown/////// -->
+
+ <div class="wrapper">
+  <div class="wrapper">
+    <div class="container3">
+      <i class="fa-solid fa-building-columns"></i>
+      <span class="num" data-val="400">000</span>
+      <span class="text">Total Number Of Eligible Students Since Inception</span>
+    </div>
+    <div class="container3">
+      <i class="fa-solid fa-users-line"></i>
+    <span class="num" data-val="340">000</span>
+    <span class="text">Total Number Of Students Placed Till Date</span>
+  </div>
+  <div class="container3">
+      <i class="fa-solid fa-graduation-cap"></i>
+    <span class="num" data-val="280">000</span>
+    <span class="text">Total Number Of Students Placed In The Year 2024</span>
+  </div>
+  </div>   
+ </div>
+
+
+<!-- //////Recruiters////// -->
+
+<div class="main-section2">
+    <div class="container4">
+       <div class="width-60">
+          <div class="placement" style="width: 85rem;">
+             <h1 class="heading-section">Our Top <span>Placement</span> Company</h1>
+             <p>Placement is understood as assigning jobs to the selected candidates. Assigning jobs to employees may involve a new job or different job. Thus, placement may include initial assignment of job to new employee, on present employees.</p>
+             <ul>
+                <li> <a href="https://www.tcs.com/" target="_blank"><img src="images/tcs.png" class="img"></li></a>
+                <li> <a href="https://www.wipro.com/" target="_blank"><img src="images/wipro.png" class="img"></li></a>
+                <li> <a href="https://bizsense.in/" target="_blank"><img src="images/bizsense.png" class="img"></li></a>
+                <li> <a href="https://www.capgemini.com/in-en/" target="_blank"><img src="images/capgemini.png" class="img"></li></a>
+                <li> <a href="https://connecticus.in/" target="_blank"><img src="images/Connecticus.png" class="img"></li></a>
+                <li> <a href="https://www.cybage.com/" target="_blank"><img src="images/cybage_logo.png" class="img"></li></a>
+                <li> <a href="https://www.endress.com/" target="_blank"><img src="images/Endress.png" class="img"></li></a>
+                <li> <a href="https://www.fidelityinternational.com/" target="_blank"><img src="images/fidelity.png" class="img"></li></a>
+                <li> <a href="https://www.hcltech.com/" target="_blank"><img src="images/HCL_Technologies_logo.svg.png" class="img"></li></a>
+                <li> <a href="https://www.infosys.com/" target="_blank"><img src="images/Infosys_logo.svg.png" class="img"></li></a>
+                <li> <a href="https://www.knorr-bremse.com/en/" target="_blank"><img src="images/konrrr.png" class="img"></li></a>
+                <li> <a href="https://www.ncdex.com/" target="_blank"><img src="images/ncedx.png" class="img"></li></a>
+                <li> <a href="https://www.acclimited.com/" target="_blank"><img src="images/acc.png" class="img"></li></a>
+                <li> <a href="https://www.adani.com/" target="_blank"><img src="images/adani.png" class="img"></li></a>
+                <li> <a href="https://www.shvenergy.com/" target="_blank"><img src="images/shv.png" class="img"></li></a>
+                <li> <a href="https://www.squareyards.com/" target="_blank"><img src="images/square yards.png" class="img"></li></a>
+                <li> <a href="https://www.techmahindra.com/" target="_blank"><img src="images/tech mahindra.png" class="img"></li></a>
+                <li> <a href="https://www.triveniturbines.com/" target="_blank"><img src="images/treveni turbines.png" class="img"></li></a>
+                <li> <a href="https://www.pod.ai/" target="_blank"><img src="images/pod ai.png" class="img"></li></a>
+                <li> <a href="https://www.uttamgalva.com/" target="_blank"><img src="images/uttam.jpg" class="img"></li></a>
+                
+             </ul>
+          </div>
+       </div>
+    </div>
+ </div>
+ 
+
+
+
+
+<!-- ///////////////Footer////////////// -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-row">
+      <div class="footer-col">
+          <h3>About Us</h3><hr>
+          <ul>
+              <li><a href="about/institute.html">Institute</a></li>
+              <li><a href="about/aicte.html">AICTE Approval</a></li>
+              <li><a href="facilities/gymkhana.html">Gymkhana</a></li>
+              <li><a href="Contact/contact.html">Contact Us</a></li>
+          </ul>
+      </div>
+      <div class="footer-col">
+          <h3>Explore</h3><hr>
+          <ul>
+              <li><a href="Contact/greviances.html">Online Grievances</a></li>
+              <li><a href="http://localhost:3000/GCOEY_Gallery">Gallery</a></li>
+              <li><a href="placement/overview.html">Placement</a></li>
+              <li><a href="facilities/hostel.html">Hostel</a></li>
+          </ul>
+      </div>
+      <div class="footer-col">
+          <h3>External Links</h3><hr>
+          <ul>
+            <li><a href="https://dbatu.ac.in/">DBATU</a></li>
+            <li><a href="https://www.dtemaharashtra.gov.in/indexview.html">DTE</a></li>
+            <li><a href="https://mahadbtmahait.gov.in/">MahaDBT</a></li>
+            <li><a href="https://www.vidyalakshmi.co.in/Students/">Vidyalakshmi Portal for loan</a></li>
+          </ul>
+      </div>
+      <div class="footer-col">
+          <h3>Follow Us</h3><hr>
+          <ul class="social-links">
+              <li><a href="https://m.facebook.com/people/Government-College-Of-Engineering-Yavatmal/100064090531209/"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://mobile.twitter.com/gcoey"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://www.instagram.com/gcoey_official/"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://in.linkedin.com/in/gcoeycodingclub"><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>&copy; 2024 <span style="color: rgb(0, 140, 195);">GCOEY</span>. All rights reserved.</p>
+  </div>
+</div>
+</footer>
+
+
+<script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-q6sV7KQ7Ut8NImQQS7ASikbLv9mQy8fKZlm72tN3mxh7BWT5xuslS5yBRPAhiw1y" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>

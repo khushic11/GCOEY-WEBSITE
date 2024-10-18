@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    
+    <title>AICTE</title>
+</head>
+<body>
+
+    <!-- //////////////Header//////////// --> 
+
+    <header class="header">
+      <img src="../images/logo.jpg" alt="logo" class="header_logo">
+      <div> 
+          <div class="header_name">
+              <h2 id="hn1">Government College of Engineering, Yavatmal</h2>
+              <h3 id="hn2">(Affiliated to Dr. Babasaheb Ambedkar Technological University)</h2>
+          </div>
+      </div> 
+      <div class="header_address">
+          <i class="fa-solid fa-location-dot fa-2xl" id="hai" style="padding-left: 6rem;" onclick="openMap('Government College of Engineering Yavatmal ,Dhamangaon Road, Yavatmal- 445001')"></i>
+          <i class="fa-solid fa-phone fa-2xl" id="hai" onclick="dialPhoneNumber('07232-2432787')"></i>
+          <i class="fa-solid fa-envelope fa-2xl" id="hai" onclick="composeEmail('principal.gcoeyavatmal@dtemaharashtra.gov.in')"></i>
+   
+          <!-- <i class="fa-solid fa-user-tie fa-2xl" id="hai"></i> -->
+      </div>
+  </header>
+<!-- ///////////////Navigation bar/////////////////// -->
+
+<div class="navigation">
+  <div class="nav_item" >
+      <a href="../index.html" id="nav_item">Home</a>
+      <div class="dropdown" id="nav_item>
+          <button class="dropbtn">About</button>
+          <div class="dropdown-content">
+              <a href="institute.html">Institute</a>
+              <a href="aicte.html">AICTE Approval-EOA</a>
+            <a href= "affilation.html">DBATU Affilation</a>
+            <a href= "vision.html">Vision & Mission</a>
+            <a href= "infracture.html">Infracture</a>
+            <a href= "idp.html">IDP 2022-27</a>
+          </div>
+      </div>
+
+      <div class="dropdown" id="nav_item>
+        <button class="dropbtn">Academics</button>
+        <div class="dropdown-content">
+            <a href="../academics/calender.html">Academic Calender</a>
+            <a href="../academics/admission.html">Admission</a>
+            <a href="../academics/examtt.html">Exam Timetable</a>
+            <a href="../academics/remedial_result.html">Remedial Exam Results</a>
+            <a href="../academics/fees_info.html">Fees Information</a>
+            <a href="../academics/syllabus.html">Syllabus</a>
+            <a href="../academics/anti_ragging.html">Anti Ragging Squad</a>
+            <a href="../academics/grc_faculty.html">GRC For Faculty</a>
+            <a href="../academics/grc_students.html">GRC For Students</a>
+        </div>
+    </div>
+
+      <div class="dropdown" id="nav_item>
+          <button class="dropbtn">Administration</button>
+          <div class="dropdown-content">
+              <a href="../administration/principle_desk.html">Principal's Desk</a>
+              <a href="../administration/organization_chart.html">Organization Chart</a>
+              <a href="../administration/office_administration.html">Office Administration</a>
+              <a href="../administration/imp_grs.html">Important GRs</a>
+              <a href="../administration/portfolio.html">Portfolio Distribution</a>
+              <a href="../administration/ombudsperson.html">Ombudsperson for Students' Grievences</a>
+          </div>
+      </div>
+      <div class="dropdown" id="nav_item>
+          <button class="dropbtn">Departments</button>
+          <div class="dropdown-content">
+            <a href="../department/computer/overview.html">Computer Enginnering</a>
+            <a href="../department/entc/overview.html">Electronics annd Telecommunicaton Engineering</a>
+            <a href="../department/mechanical/overview.html">Mechanical Enginnering</a>
+            <a href="../department/electrical/overview.html">Electrical Engineering</a>
+            <a href="../department/civil/overview.html">Civil Enginnering</a>
+            <a href="../department/workshop/overview.html">Workshop</a>
+            <a href="../department/chemistry/overview.html">Chemistry</a>
+            <a href="../department/mathematics/overview.html">Mathematics</a>
+          </div>
+      </div>
+      
+      <div class="dropdown" id="nav_item>
+        <button class="dropbtn">Facilities</button>
+        <div class="dropdown-content">
+          <a href="../facilities/library.html">library</a>
+          <a href="../facilities/gymkhana.html">Gymkhana</a>
+          <a href="../facilities/hostel.html">Hostel</a>
+          <a href="../facilities/canteen.html">Canteen</a>
+          <a href="../facilities/ccoperative_store.html">Student Co-operative store</a>
+        </div>
+      </div>
+      <div class="dropdown" id="nav_item>
+          <button class="dropbtn">Student Corner</button>
+          <div class="dropdown-content">
+            <a href="../student_corner/alumini.html">Alumni</a>
+            <a href="../student_corner/events.html">Events</a>
+            <a href="http://localhost:3000/GCOEY_Gallery">Photo Gallery</a>
+            <a href="../student_corner/scholarship.html">Scholarships & Awards</a>
+            <a href="../student_corner/stud_support_facility.html">Student Support Facility</a>
+          </div>
+        </div>
+
+        <a href="../placement/overview.html" class="dropdown" id="nav_item">Placement</a>
+        
+        <div class="dropdown" id="nav_item>
+          <button class="dropbtn">Contact</button>
+          <div class="dropdown-content">
+            <a href="../Contact/contact.html" class="dropdown" id="nav_item" style="color: black;">Contact</a>
+            <a href="../Contact/greviances.html" class="dropdown" id="nav_item" style="color: black;">Greviances</a>
+          </div>
+        </div>
+  </div>
+</div>
+<!-- ////////////////Main Body////////////////// -->
+
+
+<div class="main_body">
+  <h2 style="text-align: center; margin: 2rem;">AICTE Approval</h2>
+  <div class="grid-container">
+    <div class="grid-item" style="font-weight: bold;">Sr. No.</div>
+    <div class="grid-item" style="font-weight: bold;">Title</div>
+    <div class="grid-item" style="font-weight: bold;">Download</div>
+    <div class="grid-item" style="font-weight: bold;">Size</div>
+    <div class="grid-item">1</div>
+    <div class="grid-item">EOA 2023-24</div>
+    <div class="grid-item"><a href="../pdf/EOA_REPORT_2023-24.pdf" target="_blank" class="download-link">Download</a></div>
+    <div class="grid-item">230 KB</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">EOA 2022-23</div>
+    <div class="grid-item"><a href="../pdf/EOA_Report_22-23.pdf" target="_blank" class="download-link">Download</a></div>
+    <div class="grid-item">217 KB</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">EOA 2021-22</div>
+    <div class="grid-item"><a href="../pdf/EOA_Report_21-22.pdf" target="_blank" class="download-link">Download</a></div>
+    <div class="grid-item">213 KB</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">EOA 2020-21</div>
+    <div class="grid-item"><a href="../pdf/EOA_Report_2020-21.pdf" target="_blank" class="download-link">Download</a></div>
+    <div class="grid-item">213 KB</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">EOA 2019-20</div>
+    <div class="grid-item"><a href="../pdf/EOA_Report_2019-20.pdf" target="_blank" class="download-link">Download</a></div>
+    <div class="grid-item">227 KB</div>
+    <div class="grid-item">6</div>
+    <div class="grid-item">EOA 2018-19</div>
+    <div class="grid-item"><a href="../pdf/EOA_Report_2018-19.pdf" target="_blank" class="download-link">Download</a></div>
+    <div class="grid-item">228 KB</div>
+  </div>
+  
+</div>
+
+  <!-- //////////Footer////////// -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-row">
+      <div class="footer-col">
+          <h3>About Us</h3><hr>
+          <ul>
+              <li><a href="institute.html">Institute</a></li>
+              <li><a href="aicte.html">AICTE Approval</a></li>
+              <li><a href="../facilities/gymkhana.html">Gymkhana</a></li>
+              <li><a href="../Contact/contact.html">Contact Us</a></li>
+          </ul>
+      </div>
+      <div class="footer-col">
+          <h3>Explore</h3><hr>
+          <ul>
+              <li><a href="../Contact/greviances.html">Online Grievances</a></li>
+              <li><a href="http://localhost:3000/GCOEY_Gallery">Gallery</a></li>
+              <li><a href="../placement/overview.html">Placement</a></li>
+              <li><a href="../facilities/hostel.html">Hostel</a></li>
+          </ul>
+      </div>
+      <div class="footer-col">
+          <h3>External Links</h3><hr>
+          <ul>
+            <li><a href="https://dbatu.ac.in/">DBATU</a></li>
+            <li><a href="https://www.dtemaharashtra.gov.in/indexview.html">DTE</a></li>
+            <li><a href="https://mahadbtmahait.gov.in/">MahaDBT</a></li>
+            <li><a href="https://www.vidyalakshmi.co.in/Students/">Vidyalakshmi Portal for loan</a></li>
+          </ul>
+      </div>
+      <div class="footer-col">
+          <h3>Follow Us</h3><hr>
+          <ul class="social-links">
+              <li><a href="https://m.facebook.com/people/Government-College-Of-Engineering-Yavatmal/100064090531209/"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://mobile.twitter.com/gcoey"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://www.instagram.com/gcoey_official/"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://in.linkedin.com/in/gcoeycodingclub"><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>&copy; 2024 <span style="color: rgb(0, 140, 195);">GCOEY</span>. All rights reserved.</p>
+  </div>
+</div>
+</footer>
+
+
+<script src="../index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
